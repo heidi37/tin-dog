@@ -3,7 +3,6 @@
 class Dog {
     constructor(data){
         Object.assign(this, data)
-        console.log(this)
     }
     getDogHtml(){
         return `

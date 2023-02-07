@@ -1,3 +1,37 @@
 body {
     background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
 }
+
+.container {
+    background: #fff;
+    width: 550px;
+    height: 973px;
+    padding: 0 8px 24px;
+}
+
+.app-header {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile-img img {
+    width: 100%;
+    display: relative;
+}
+
+.app-footer{
+    padding: 24px 0;
+}
+
+/* icon background
+
+#DBFFF4 - green
+#FFE7EF - pink
+
+
+*/
