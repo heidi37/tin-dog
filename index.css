@@ -4,6 +4,18 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+p {
+    margin: .5rem 0;
 }
 
 .container {
@@ -19,13 +31,47 @@ body {
     justify-content: space-around;
 }
 
+#profile, #chat {
+    width: 34px;
+    height:34px;
+}
+
+#logo {
+    width: 84px;
+    height: 42px;
+}
+
+.app-body{
+    position: relative;
+}
+
 .profile-img img {
     width: 100%;
-    display: relative;
+}
+
+.profile-like {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    transform: rotate(-35deg);
+}
+
+.profile-like img {
+    width: 234px;
+    height: 117px;
+}
+
+.profile-text {
+ position: absolute;
+ top: 650px;
+ left: 20px;
+ color: #fff;
 }
 
 .app-footer{
     padding: 24px 0;
+    display: flex;
+    justify-content: center;
 }
 
 /* icon background

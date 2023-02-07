@@ -9,4 +9,4 @@ const bella = new Dog(dogs[1])
 const teddy = new Dog(dogs[2])
 
 const dogDiv = document.getElementById('dog-div')
-dogDiv.innerHTML += rex.getDogHtml()
+// dogDiv.innerHTML += rex.getDogHtml()
