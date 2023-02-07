@@ -1,10 +1,22 @@
 // Create the Dog class here
-import { dogs } from "./data"
 
 class Dog {
-    constuctor(data){
-
+    constructor(data){
+        Object.assign(this, data)
+        console.log(this)
+    }
+    getDogHtml(){
+        return `
+        <div>
+        <div>${this.name}</div>
+        <div>${this.avatar}</div>
+        <div>${this.age}</div>
+        <div>${this.bio}</div>
+        <div>${this.hasBeenSwiped}</div>
+        <div>${this.hasBeenLiked}</div>
+        </div>
+        `
     }
 }
 
-export {Dog}
+export default Dog
