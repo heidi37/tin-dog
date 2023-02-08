@@ -57,7 +57,7 @@ p {
     transform: rotate(-35deg);
 }
 
-.profile-like img {
+.profile-like img, profile-nope img {
     width: 234px;
     height: 117px;
 }
@@ -84,6 +84,9 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
+    background: #fff;
+    transition: background ease-in-out .25s;
 }
 
 .cross:hover{
