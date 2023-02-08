@@ -10,12 +10,13 @@ body {
 
 h1 {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0;
 }
 
 p {
     margin: .5rem 0;
+    color: #B7B7B7
 }
 
 .container {
@@ -63,7 +64,7 @@ p {
 
 .profile-text {
  position: absolute;
- top: 650px;
+ top: 680px;
  left: 20px;
  color: #fff;
 }
@@ -72,6 +73,25 @@ p {
     padding: 24px 0;
     display: flex;
     justify-content: center;
+    gap: 24px;
+}
+
+.round-button{
+    width: 92px;
+    height: 92px;
+    box-shadow: 0px 10px 20px #E9E9EA;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cross:hover{
+    background: #FFE7EF;
+}
+
+.like:hover{
+    background: #DBFFF4;
 }
 
 /* icon background
