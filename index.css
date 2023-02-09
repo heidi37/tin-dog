@@ -97,10 +97,10 @@ p {
     background: #DBFFF4;
 }
 
-/* icon background
+.end-profiles {
+    text-align: center;
+}
 
-#DBFFF4 - green
-#FFE7EF - pink
-
-
-*/
+.end-profiles p {
+    color: #343434;
+}
