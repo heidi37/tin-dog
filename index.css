@@ -27,9 +27,9 @@ p {
 }
 
 .app-header {
-    padding: 20px 0;
+    padding: 20px 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #profile, #chat {
@@ -64,7 +64,7 @@ p {
 
 .profile-text {
  position: absolute;
- top: 680px;
+ top: 660px;
  left: 20px;
  color: #fff;
 }

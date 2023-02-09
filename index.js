@@ -4,14 +4,20 @@ import dogs from './data.js'
 import Dog from "./Dog.js"
 
 
-let dogProfile = new Dog(dogs[0])
+let dogProfile;
 
 const appBody = document.querySelector('.app-body')
 const nopeButton = document.querySelector('#nope')
 const likeButton = document.querySelector('#like')
 
 const renderDogProfile = function(){
-    appBody.innerHTML = dogProfile.getDogHtml()
+    if(dogs.length > 0) {
+        nopeButton.disabled = false
+        likeButton.disabled = false
+        dogProfile = new Dog(dogs.shift())
+        appBody.innerHTML = dogProfile.getDogHtml()
+        console.log(dogProfile)
+    }
 }
 
 renderDogProfile()
@@ -29,10 +35,9 @@ likeButton.addEventListener("click", function(){
 const disableButtons = function(){
     nopeButton.disabled = true
     likeButton.disabled = true
-    console.log(dogs)
-    dogs.shift()
-    console.log(dogs)
-    appBody.innerHTML = ''
+
+    // appBody.innerHTML = ''
+    // renderDogProfile()
     setTimeout(function (){
         renderDogProfile()
     }, 1000)
