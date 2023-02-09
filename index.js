@@ -17,6 +17,16 @@ const renderDogProfile = function(){
         dogProfile = new Dog(dogs.shift())
         appBody.innerHTML = dogProfile.getDogHtml()
         console.log(dogProfile)
+    } else {
+        appBody.innerHTML = `
+        <div class="end-profiles">
+        <h2>End of Profiles</h2>
+        <p>You have viewed all the available profiles. New profiles are added frequently.</p>
+        <p>Come back soon!😉</p>
+        </div>
+        `
+        nopeButton.style.display = "none";
+        likeButton.style.display = "none";
     }
 }
 
